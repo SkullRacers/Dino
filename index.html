@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="home.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Funnel+Display:wght@300..800&display=swap" rel="stylesheet">
+<script src="https://kit.fontawesome.com/bc66f95493.js" crossorigin="anonymous"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Funnel+Display:wght@300..800&family=Henny+Penny&display=swap" rel="stylesheet">
+    <title>Dark Cretaceous</title>
+</head>
+<body>
+    <header>
+        <div id="head" style="position: absolute; z-index: 999; height: 100vh; width: 100vw; display: flex; justify-content: center; align-items: center;">
+
+            <h1 style="font-family: 'Funnel Display', cursive; z-index: 999;"><span style="color: rgb(134, 255, 247); font-size: 207px; opacity: 0;" id="dino">Dark </span><br><span style="color: white; font-size: 109px; opacity: 0;" id="world">Cretaceous</span></h1>
+        </div>
+        <a href="#searchDino" style="text-decoration: none; color: black;">
+            <i class="fa-solid fa-computer-mouse fa-2xl" id="DownArrow"></i>
+        </a>
+        <div id="overlay">
+        </div>
+    </header>
+
+    <div id="searchDino">
+        <video autoplay muted loop id="dinoVideo" style="color: white;">
+            <source src="vid.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <div id="searchOverlay"></div>
+        <h1 style="color: white; font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; font-size: 76px;">Search Dinosaurs</h1>
+        <input type="text" id="searchDinoInp">
+        <button style="z-index: 3; background-color: white; color: black; border-radius: 34px; padding: 12px; margin-top: 9px; cursor: pointer;" id="searchBtn">Search</button>
+    </div>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="home.js"></script>
+</body>
+</html>

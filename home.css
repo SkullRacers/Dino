@@ -1,0 +1,120 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+#overlay {
+    height: 100%;
+    width: 100%;
+}
+
+#overlay::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 170vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.5); 
+    z-index: 1; 
+}
+
+header {
+    height: 100vh;
+    width: 170vw;
+    background: url('dino_banner.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+body {
+    overflow-x: hidden;
+    height: 100vh;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+#DownArrow {
+    padding: 83px;
+    position: absolute;
+    top: 290px;
+    left: 1020px;
+    background-color: white;
+    border-radius: 974px;
+    z-index: 999;
+    cursor: pointer;
+    transition: 1s ease-in-out all;
+}
+
+#DownArrow:hover {
+    padding: 90px;
+}
+
+#DownArrow i {
+    padding: 97px;
+}
+
+#searchDino {
+    position: relative;
+    background-color: black;
+    height: 60vh;
+    width: 100vw;
+    overflow: hidden;
+    margin-top: 12px;
+    border-bottom-left-radius: 63px;
+    border-bottom-right-radius: 63px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+#dinoVideo {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 1;
+}
+
+#searchOverlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.697);
+    z-index: 2;
+}
+
+#searchDino h1,
+#searchDino input {
+    position: relative;
+    z-index: 3;
+}
+
+#searchDino input {
+    padding: 18px;
+    border-radius: 34px;
+}
+
+#popup {
+    background-color: white;
+    box-shadow: 12px 12px 12px black;
+    padding: 12px;
+    height: 200px;
+    width: 200px;
+    border-radius: 23px;
+    position: absolute;
+    top: 400px;
+    left: 500;
+    z-index: 999;
+}
